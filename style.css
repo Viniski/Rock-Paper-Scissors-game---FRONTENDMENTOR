@@ -1,0 +1,258 @@
+:root {
+    --main-text: #fff;
+    --border-color: hsl(217, 16%, 45%);
+    --score-color: hsl(229, 64%, 46%);
+    --text-color: hsl(229, 25%, 31%);
+    --lizard-color: hsl(261, 73%, 60%);
+    --paper-color: hsl(230, 89%, 62%);
+    --rock-color: hsl(349, 71%, 52%);
+    --spock-color: hsl(189, 59%, 53%);
+    --scissors-color: hsl(39, 89%, 49%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: hsl(229, 25%, 31%);
+    letter-spacing: .05rem;
+  }
+
+  body {
+    background: radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    width: 100vw;
+    height: 100vh;
+    } 
+
+    header {
+        width: 88vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 6vw auto;
+        border: solid .5rem var(--border-color);
+        border-radius: .5rem;
+        padding: 2rem;
+    }
+
+    .logo {
+        text-align: center;
+        display: block;
+        height: 6rem;
+    }
+
+     .logo img {
+        display: block;
+        height: 100%;
+    } 
+
+    .score {
+        flex-wrap: wrap;
+        height: 6rem;
+        width: 6rem;
+        background-color: white;
+        border-radius: 5%;
+    }
+
+    p {
+        display: block;
+        color:  hsl(229, 64%, 46%);
+        text-transform: uppercase;
+        font-size:  1.5rem;
+        text-align: center;
+    }
+
+    .score p span {
+        display: block;
+        font-size: 3rem;
+    } 
+
+  @media (max-width : 500px) {
+    * {
+        font-size: 10px;
+        }
+
+button {
+    width: 25vw;
+    height: 25vw;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  button img {
+    display: block;
+    margin: auto;
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .board { 
+   background-image: url(./images/bg-pentagon.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: relative;
+   margin: auto;
+   height: 56vw;
+   width: 60vw;
+   margin-top: 20vh;
+  }
+
+  .board__diplay-none {
+    display: none;
+  }
+
+  .lizard {
+    position: absolute;
+    bottom: -11vw;
+    left: -2vw;
+    border: solid 2.5vw var(--lizard-color);
+  }
+
+  .paper {
+    position: absolute;
+    top: 10vw;
+    right: -8vw;
+    border: solid 2.5vw var(--paper-color);
+  }
+
+  .rock {
+    position: absolute;
+    bottom: -11vw;
+    right: -2vw;
+    border: solid 2.5vw var(--rock-color);
+  }
+
+  .scissors {
+    position: absolute;
+    top: -11vw;
+    left: 17.5vw;
+    border: solid 2.5vw var(--scissors-color);
+  }
+  
+  .spock {
+    position: absolute;
+    top: 10vw;
+    left: -8vw;
+    border: solid 2.5vw var(--spock-color);
+  }
+
+  .fight {
+    margin-top: 20vh;
+    margin: auto;
+    width: 60vw;
+    height: 30vh;
+    position: relative;
+    margin-top: 20vh;
+  }
+
+  .fight__display-none {
+    display: none;
+  }
+
+  .fight .lizard {
+    position: absolute;
+    top: 10vw;
+    left: -12vw;
+    width: 32vw;
+    height: 32vw;
+  }
+
+  .fight .paper {
+    position: absolute;
+    top: 10vw;
+    right: -12vw;
+    width: 32vw;
+    height: 32vw;
+  }
+
+  .fight .paper img, 
+  .fight .lizard img { 
+    width: 15vw;
+    height: 15vw;
+  }
+
+  
+  .fight .computer p {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: -13vw;
+  }
+
+  .fight .user p {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: -6vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* @media screen and (orientation:landscape) {
+        
+    header {
+        width: 88vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 6vw auto;
+        border: solid .5rem var(--border-color);
+        border-radius: .5rem;
+        padding: 2rem;
+    }
+
+    .logo {
+        text-align: center;
+        display: block;
+        height: 6rem;
+
+    }
+
+     .logo img {
+        display: block;
+        height: 100%;
+    } 
+
+    .score {
+        flex-wrap: wrap;
+        height: 6rem;
+        width: 6rem;
+        background-color: white;
+        border-radius: 5%;
+
+    }
+
+    .score p {
+        display: block;
+        color:  hsl(229, 64%, 46%);
+        text-transform: uppercase;
+        font-size:  1.5rem;
+        text-align: center;
+
+    }
+
+    .score p span {
+        display: block;
+        font-size: 3rem;
+    }
+    } */
+
+
+/* 
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); } */
